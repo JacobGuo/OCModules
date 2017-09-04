@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SKYTabBarComponet.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //sample to load tabBarController by tabBarComponet.
+    SKYTabBarComponet *instance = [SKYTabBarComponet new];
+    self.window.rootViewController = instance.tabBarCtrl;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

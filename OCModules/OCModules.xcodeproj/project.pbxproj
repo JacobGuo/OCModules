@@ -16,6 +16,12 @@
 		A77AE86F1F5D3CE200C132F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AE86D1F5D3CE200C132F0 /* LaunchScreen.storyboard */; };
 		A77AE87A1F5D3CE200C132F0 /* OCModulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AE8791F5D3CE200C132F0 /* OCModulesTests.m */; };
 		A77AE8851F5D3CE200C132F0 /* OCModulesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AE8841F5D3CE200C132F0 /* OCModulesUITests.m */; };
+		A77AE8971F5D3FF100C132F0 /* SKYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AE8961F5D3FF100C132F0 /* SKYTabBarController.m */; };
+		A77AE89B1F5D460400C132F0 /* SKYTabBarComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AE89A1F5D460400C132F0 /* SKYTabBarComponet.m */; };
+		A77AE8A81F5D520200C132F0 /* menu_1_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A41F5D520200C132F0 /* menu_1_off@2x.png */; };
+		A77AE8A91F5D520200C132F0 /* menu_1_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */; };
+		A77AE8AA1F5D520200C132F0 /* menu_4_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */; };
+		A77AE8AB1F5D520200C132F0 /* menu_4_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,14 @@
 		A77AE8801F5D3CE200C132F0 /* OCModulesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCModulesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77AE8841F5D3CE200C132F0 /* OCModulesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCModulesUITests.m; sourceTree = "<group>"; };
 		A77AE8861F5D3CE200C132F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77AE8951F5D3FF100C132F0 /* SKYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYTabBarController.h; sourceTree = "<group>"; };
+		A77AE8961F5D3FF100C132F0 /* SKYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYTabBarController.m; sourceTree = "<group>"; };
+		A77AE8991F5D460400C132F0 /* SKYTabBarComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYTabBarComponet.h; sourceTree = "<group>"; };
+		A77AE89A1F5D460400C132F0 /* SKYTabBarComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYTabBarComponet.m; sourceTree = "<group>"; };
+		A77AE8A41F5D520200C132F0 /* menu_1_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_1_off@2x.png"; sourceTree = "<group>"; };
+		A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_1_on@2x.png"; sourceTree = "<group>"; };
+		A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_4_off@2x.png"; sourceTree = "<group>"; };
+		A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_4_on@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,7 @@
 			children = (
 				A77AE85F1F5D3CE200C132F0 /* AppDelegate.h */,
 				A77AE8601F5D3CE200C132F0 /* AppDelegate.m */,
+				A77AE8931F5D3E5600C132F0 /* UI */,
 				A77AE8621F5D3CE200C132F0 /* ViewController.h */,
 				A77AE8631F5D3CE200C132F0 /* ViewController.m */,
 				A77AE8651F5D3CE200C132F0 /* Main.storyboard */,
@@ -141,6 +156,37 @@
 				A77AE8861F5D3CE200C132F0 /* Info.plist */,
 			);
 			path = OCModulesUITests;
+			sourceTree = "<group>";
+		};
+		A77AE8931F5D3E5600C132F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A77AE8941F5D3E5600C132F0 /* TabBarController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A77AE8941F5D3E5600C132F0 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A77AE8981F5D45D800C132F0 /* Sample */,
+				A77AE8951F5D3FF100C132F0 /* SKYTabBarController.h */,
+				A77AE8961F5D3FF100C132F0 /* SKYTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		A77AE8981F5D45D800C132F0 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A77AE8A41F5D520200C132F0 /* menu_1_off@2x.png */,
+				A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */,
+				A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */,
+				A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */,
+				A77AE8991F5D460400C132F0 /* SKYTabBarComponet.h */,
+				A77AE89A1F5D460400C132F0 /* SKYTabBarComponet.m */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77AE8AB1F5D520200C132F0 /* menu_4_on@2x.png in Resources */,
+				A77AE8AA1F5D520200C132F0 /* menu_4_off@2x.png in Resources */,
 				A77AE86F1F5D3CE200C132F0 /* LaunchScreen.storyboard in Resources */,
+				A77AE8A81F5D520200C132F0 /* menu_1_off@2x.png in Resources */,
 				A77AE86C1F5D3CE200C132F0 /* Assets.xcassets in Resources */,
+				A77AE8A91F5D520200C132F0 /* menu_1_on@2x.png in Resources */,
 				A77AE8671F5D3CE200C132F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +328,9 @@
 			files = (
 				A77AE8641F5D3CE200C132F0 /* ViewController.m in Sources */,
 				A77AE86A1F5D3CE200C132F0 /* OCModules.xcdatamodeld in Sources */,
+				A77AE89B1F5D460400C132F0 /* SKYTabBarComponet.m in Sources */,
 				A77AE8611F5D3CE200C132F0 /* AppDelegate.m in Sources */,
+				A77AE8971F5D3FF100C132F0 /* SKYTabBarController.m in Sources */,
 				A77AE85E1F5D3CE200C132F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
