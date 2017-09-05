@@ -23,7 +23,11 @@
         int totals = (int)images.count;
         for(int i =0;i<totals;i++){
             UIViewController *ctl = [_component viewControllerForIndex:i];
-            [viewCtls addObject:[self viewCtr:ctl title:titles[i] img:images[i] seleImg:seleImgs[i]]];
+            UINavigationController *navi = [self viewCtr:ctl title:titles[i] img:images[i] seleImg:seleImgs[i]];
+            if([_component respondsToSelector:@selector(makeSomeDetailOfNavigationBar:atIndex:)]){
+                [_component makeSomeDetailOfNavigationBar:navi.navigationBar atIndex:i];
+            }
+            [viewCtls addObject:navi];
         }
         [self setViewControllers:viewCtls];
         self.tabBar.translucent = NO;
@@ -49,7 +53,6 @@
     /* UIImageRenderingModeAlwaysOriginal: 防止系统渲染tintColor*/
     ctl.tabBarItem = [self itemForTitle:title img:[UIImage imageNamed:img] selImg:[selectedImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:ctl];
-    [nav setNavigationBarHidden:YES];
     return nav;
 }
 - (UITabBarItem*)itemForTitle:(NSString*)title img:(UIImage*)img selImg:(UIImage*)selImg

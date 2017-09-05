@@ -22,6 +22,10 @@
 		A77AE8A91F5D520200C132F0 /* menu_1_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */; };
 		A77AE8AA1F5D520200C132F0 /* menu_4_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */; };
 		A77AE8AB1F5D520200C132F0 /* menu_4_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */; };
+		A7E800861F5E2E640033E30E /* nav_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E800851F5E2E640033E30E /* nav_background@2x.png */; };
+		A7E8008A1F5E3C220033E30E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E800891F5E3C220033E30E /* BaseViewController.m */; };
+		A7E800901F5E3F8C0033E30E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8008F1F5E3F8C0033E30E /* HomeViewController.m */; };
+		A7E800931F5E3F950033E30E /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E800921F5E3F950033E30E /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,14 @@
 		A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_1_on@2x.png"; sourceTree = "<group>"; };
 		A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_4_off@2x.png"; sourceTree = "<group>"; };
 		A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_4_on@2x.png"; sourceTree = "<group>"; };
+		A7E800851F5E2E640033E30E /* nav_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_background@2x.png"; sourceTree = "<group>"; };
+		A7E800881F5E3C220033E30E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A7E800891F5E3C220033E30E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A7E8008B1F5E3C8C0033E30E /* BaseVCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVCConfiguration.h; sourceTree = "<group>"; };
+		A7E8008E1F5E3F8C0033E30E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A7E8008F1F5E3F8C0033E30E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A7E800911F5E3F950033E30E /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		A7E800921F5E3F950033E30E /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,7 @@
 		A77AE8931F5D3E5600C132F0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A7E800871F5E3C120033E30E /* BaseViewController */,
 				A77AE8941F5D3E5600C132F0 /* TabBarController */,
 			);
 			path = UI;
@@ -183,8 +196,31 @@
 				A77AE8A51F5D520200C132F0 /* menu_1_on@2x.png */,
 				A77AE8A61F5D520200C132F0 /* menu_4_off@2x.png */,
 				A77AE8A71F5D520200C132F0 /* menu_4_on@2x.png */,
+				A7E800851F5E2E640033E30E /* nav_background@2x.png */,
 				A77AE8991F5D460400C132F0 /* SKYTabBarComponet.h */,
 				A77AE89A1F5D460400C132F0 /* SKYTabBarComponet.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		A7E800871F5E3C120033E30E /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8008D1F5E3F7E0033E30E /* Sample */,
+				A7E8008B1F5E3C8C0033E30E /* BaseVCConfiguration.h */,
+				A7E800881F5E3C220033E30E /* BaseViewController.h */,
+				A7E800891F5E3C220033E30E /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		A7E8008D1F5E3F7E0033E30E /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8008E1F5E3F8C0033E30E /* HomeViewController.h */,
+				A7E8008F1F5E3F8C0033E30E /* HomeViewController.m */,
+				A7E800911F5E3F950033E30E /* MyViewController.h */,
+				A7E800921F5E3F950033E30E /* MyViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -301,6 +337,7 @@
 				A77AE8A81F5D520200C132F0 /* menu_1_off@2x.png in Resources */,
 				A77AE86C1F5D3CE200C132F0 /* Assets.xcassets in Resources */,
 				A77AE8A91F5D520200C132F0 /* menu_1_on@2x.png in Resources */,
+				A7E800861F5E2E640033E30E /* nav_background@2x.png in Resources */,
 				A77AE8671F5D3CE200C132F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,9 +366,12 @@
 				A77AE8641F5D3CE200C132F0 /* ViewController.m in Sources */,
 				A77AE86A1F5D3CE200C132F0 /* OCModules.xcdatamodeld in Sources */,
 				A77AE89B1F5D460400C132F0 /* SKYTabBarComponet.m in Sources */,
+				A7E800931F5E3F950033E30E /* MyViewController.m in Sources */,
 				A77AE8611F5D3CE200C132F0 /* AppDelegate.m in Sources */,
 				A77AE8971F5D3FF100C132F0 /* SKYTabBarController.m in Sources */,
+				A7E8008A1F5E3C220033E30E /* BaseViewController.m in Sources */,
 				A77AE85E1F5D3CE200C132F0 /* main.m in Sources */,
+				A7E800901F5E3F8C0033E30E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +603,7 @@
 				A77AE88B1F5D3CE200C132F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A77AE88C1F5D3CE200C132F0 /* Build configuration list for PBXNativeTarget "OCModulesTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +612,7 @@
 				A77AE88E1F5D3CE200C132F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A77AE88F1F5D3CE200C132F0 /* Build configuration list for PBXNativeTarget "OCModulesUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +621,7 @@
 				A77AE8911F5D3CE200C132F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

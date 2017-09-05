@@ -26,4 +26,8 @@
 - (NSArray*)selectedImagesForTabBarItem;
 - (NSArray*)titlesForTabBarItem;
 - (UIViewController*)viewControllerForIndex:(int)index;
+
+@optional
+//such as titleColor,backgroundImage,and so on.
+- (void)makeSomeDetailOfNavigationBar:(UINavigationBar*)naviBar atIndex:(int)index;
 @end
