@@ -19,7 +19,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         _circle = circle;
-        _timerDuration = 1.0;
+        _timerDuration = 6.0;
         _dataSource = dataSource;
         //add scrollView
         _scrollV = [[UIScrollView alloc] initWithFrame:self.bounds];
