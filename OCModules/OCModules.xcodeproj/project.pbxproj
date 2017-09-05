@@ -26,6 +26,7 @@
 		A7E8008A1F5E3C220033E30E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E800891F5E3C220033E30E /* BaseViewController.m */; };
 		A7E800901F5E3F8C0033E30E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8008F1F5E3F8C0033E30E /* HomeViewController.m */; };
 		A7E800931F5E3F950033E30E /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E800921F5E3F950033E30E /* MyViewController.m */; };
+		A7E800971F5E419E0033E30E /* SKYAutoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E800961F5E419E0033E30E /* SKYAutoScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		A7E8008F1F5E3F8C0033E30E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A7E800911F5E3F950033E30E /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		A7E800921F5E3F950033E30E /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A7E800951F5E419E0033E30E /* SKYAutoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYAutoScrollView.h; sourceTree = "<group>"; };
+		A7E800961F5E419E0033E30E /* SKYAutoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYAutoScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,7 @@
 		A77AE8931F5D3E5600C132F0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A7E800941F5E41860033E30E /* AutoScroll */,
 				A7E800871F5E3C120033E30E /* BaseViewController */,
 				A77AE8941F5D3E5600C132F0 /* TabBarController */,
 			);
@@ -223,6 +227,15 @@
 				A7E800921F5E3F950033E30E /* MyViewController.m */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		A7E800941F5E41860033E30E /* AutoScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A7E800951F5E419E0033E30E /* SKYAutoScrollView.h */,
+				A7E800961F5E419E0033E30E /* SKYAutoScrollView.m */,
+			);
+			path = AutoScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E800971F5E419E0033E30E /* SKYAutoScrollView.m in Sources */,
 				A77AE8641F5D3CE200C132F0 /* ViewController.m in Sources */,
 				A77AE86A1F5D3CE200C132F0 /* OCModules.xcdatamodeld in Sources */,
 				A77AE89B1F5D460400C132F0 /* SKYTabBarComponet.m in Sources */,
